@@ -1,0 +1,33 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+</br>
+
+
+
+      {% if new_meeting %}
+      <p class="lead">
+          Meeing is added
+      </p>
+{% else %}
+<!-- the form will be posed on the same page -->
+<!-- same page has the handling logic -->
+<h2>Add new Meeting</h2>
+
+<div class="jumbotron"
+      <div class="form-group">
+    <form action="" method="post">
+
+
+          {{ meeting_form.as_p }}
+          {% csrf_token %}
+          <input type="submit" value="Add Meeting">
+      </form>
+  {% endif %}
+
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
