@@ -1,0 +1,12 @@
+{% extends "base/base.html"%}
+
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+  <h1 class="display-2">Welcome To Meeting Planner</h1>
+  <p> This App is created by {{tmp_data}}</p>
+  <div class="alert alert-info" role="alert">
+  Total Meeting currently : <b> {{total_meeting}} </b>
+</div>
+</div>
+{% endblock%}
